@@ -1,9 +1,9 @@
 package pl.patrykheciak.projektowe;
 
-import android.graphics.Movie;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import pl.patrykheciak.projektowe.model.MyMovie;
 
 public class MovieRepository {
     private List<MyMovie> movies;

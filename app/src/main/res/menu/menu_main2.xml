@@ -1,7 +1,40 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="pl.patrykheciak.projektowe.Main2Activity">
+      tools:context="pl.patrykheciak.projektowe.MainActivity">
+
+    <item
+        android:id="@+id/file"
+        android:icon="@drawable/baseline_sort_24"
+        android:title="Menu top"
+        app:showAsAction="always">
+        <!-- "file" submenu -->
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_sort_name_asc"
+                    android:checked="true"
+                    android:title="Według nazwy ros."/>
+                <item
+                    android:id="@+id/menu_sort_name_desc"
+                    android:title="Według nazwy mal."/>
+
+                <item
+                    android:id="@+id/menu_sort_date_asc"
+                    android:title="Według daty ros."/>
+                <item
+                    android:id="@+id/menu_sort_date_desc"
+                    android:title="Według daty mal."/>
+
+                <item
+                    android:id="@+id/menu_sort_duration_asc"
+                    android:title="Według długości ros."/>
+                <item
+                    android:id="@+id/menu_sort_duration_desc"
+                    android:title="Według długości mal."/>
+            </group>
+        </menu>
+    </item>
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
